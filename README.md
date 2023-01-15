@@ -1,5 +1,6 @@
 # SvgDrawApp
 A simple react svg drawing app to help creating svg´s in html and react forms. No external dependencies or npm packages.
+You can try it on: https://prexen.github.io/SvgDrawApp/
 
 TLDR: Choose your viewbox size on the top left of the interface, select one of the drawing tools and click on the canvas. The last point of the <b>line tool</b> you must press <i>"enter"</i>.
 
