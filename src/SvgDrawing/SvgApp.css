@@ -1,0 +1,134 @@
+
+:root{
+   --majorLineColor: rgb(148, 148, 148);
+   --minorLineColor: rgb(112, 112, 112);
+}
+
+
+.labelSelect{
+   font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+   text-align: center;
+}
+
+
+.toolInput:checked+.labelSelect{
+   background-color: var(--elevation_300);
+   color: white;
+}
+
+
+
+
+
+
+.stageArea:focus{
+   outline: none;
+}
+
+/* .ruler-x{
+   grid-column: 2/3;
+   grid-row: 1/2;
+   box-sizing: content-box;
+} */
+.ruler-x::after{
+   content: "";
+   position: absolute;
+   top: 12px;
+   left: 0px;
+   height: 8px;
+   width: 100%;
+	background-size: inherit;
+	background-image:linear-gradient(90deg, var(--majorLineColor) 1px, transparent 1px);
+}
+.ruler-x2::after{
+   content: "";
+   position: absolute;
+   top: 15px;
+   left: 0px;
+   height: 5px;
+   width: 100%;
+	background-size: inherit;
+	background-image:linear-gradient(90deg, var(--minorLineColor) 1px, transparent 1px);
+}
+
+.majorLineX::after{
+   content: attr(data-value);
+   position: absolute;
+   top: -1px;
+   left: 2px;
+   font-size: 8px;
+}
+
+.ruler-y{
+   grid-column: 1/2;
+   grid-row: 2/3;
+   box-sizing: content-box;
+}
+
+.majorLineX{
+   width: 1px;
+   height: 20px;
+   background-color: var(--majorLineColor);
+}
+
+
+/* .minorLineX{
+   top: 15px;
+   width: 1px;
+   height: 5px;
+   background-color: var(--majorLineColor);
+} */
+
+
+
+
+
+
+
+
+.majorLineY{
+   width: 20px;
+   height: 1px;
+   background-color: var(--majorLineColor);
+}
+
+.majorLineY::after{
+   content: attr(data-value);
+   position: absolute;
+   top: -10px;
+   left: 2px;
+   font-size: 8px;
+}
+
+
+.ruler-y::after{
+   content: "";
+   position: absolute;
+   top: 0px;
+   left: 12px;
+   height: 1px;
+   width: 8px;
+   height: 100%;
+	background-size: inherit;
+	background-image:linear-gradient(0deg, var(--majorLineColor) 1px, transparent 1px);
+}
+
+.ruler-y2::after{
+   content: "";
+   position: absolute;
+   top: 0px;
+   left: 15px;
+   height: 100%;
+   width: 100%;
+	background-size: inherit;
+	background-image:linear-gradient(0deg, var(--minorLineColor) 1px, transparent 1px);
+}
+
+
+.legenda::before{
+   content: attr(data-value);
+   position: absolute;
+   top: 2px;
+   left: -12px;
+   font-size: 11px;
+}

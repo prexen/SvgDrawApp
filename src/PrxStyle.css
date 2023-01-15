@@ -1,0 +1,449 @@
+
+/* stroke="#AAAFB8" */
+
+:root{
+   /* --blue: #1e90ff; definicao de variavel */
+   /* color: var(--blue); exemplo de uso */
+   --elevation_50: #1f1f21; /*criado so pra ajudar na gallery, nao tem hover */
+   --elevation_100: #1b1b1e; /* el100 , elevation color ***background-color prop*** */
+   --elevation_200: #27272a; /* el200 , elevation color ***background-color prop*** */
+   --elevation_250: #2f2f33; /* el200 , elevation color ***background-color prop*** */
+   --elevation_300: #3d3d43; /* el300 , elevation color ***background-color prop*** */
+   --elevation_400: #4f4f55; /* el300 , elevation color ***background-color prop*** */
+   --elevation_500: #626268; /* el300 , elevation color ***background-color prop*** */
+   
+   --fcor_100: #AAAFB8; /* fcor100 ,text color, ***color property*** */
+   --fcor_200: #C3D4EA; /* fcor200 ,text color, ***color property*** */
+   --fcor_300: #a9b8ff; /* fcor300 ,text color, ***color property*** */
+   --fcor_white: #ffffff; /* fcorwhite ,text color, ***color property*** */
+   --fcor_black: #000000; /* fcorblack ,text color, ***color property*** */
+
+   --t_size_sm: 14px; /* no t using atm */
+
+   --acc100: #a9b8ff;/*(78,105,222);*/
+   --acc200: #3730a3;
+   --acc300: rgb(78,105,222);
+
+   --hightlight100: rgb(78,105,222); /*#fdbd81;*/
+   --hightlight200: rgb(179, 150, 108);
+   --hightlight300: rgb(179, 150, 108);
+   /* quando eu quiser fotar a fonte com a cor hight light como faz? */
+   /* no hover inclusive */
+
+}
+
+/* settings gerais */
+body{
+   background-color: var(--elevation_100);
+}
+button{
+   font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+}
+.myFont{
+   font-family: ui-monospace,SFMono-Regular,SF Mono,Menlo,Consolas,Liberation Mono,monospace;
+}
+
+.radioON{
+   background-image: radial-gradient(circle at center, var(--fcor_300) 0, var(--fcor_300) 24%, black 32%, transparent 40%);
+   /* 30 32 46   -- delta 0 2 12 */
+   background-size: 100% 100%;
+   
+}
+
+/* borders */
+.b0{
+   border: none;
+}
+.b100{
+   border: 1px solid var(--elevation_100);
+}
+.b200{
+   border: 1px solid var(--elevation_200);
+}
+.b300{
+   border: 1px solid var(--elevation_300);
+}
+.b400{
+   border: 1px solid var(--elevation_400);
+}
+.b500{
+   border: 1px solid var(--elevation_500);
+}
+
+.bwhite{
+   border: 1px solid white;
+}
+
+.b-bot50{
+   border-bottom: 1px solid var(--elevation_50);
+}
+.b-bot100{
+   border-bottom: 1px solid var(--elevation_100);
+}
+.b-bot200{
+   border-bottom: 1px solid var(--elevation_200);
+}
+.b-bot300{
+   border-bottom: 1px solid var(--elevation_300);
+}
+.b-bot400{
+   border-bottom: 1px solid var(--elevation_400);
+}
+
+.radius2{
+   border-radius: 2px;
+}
+.radius3{
+   border-radius: 3px;
+}
+.radius4{
+   border-radius: 4px;
+}
+.radius5{
+   border-radius: 5px;
+}
+.radius6{
+   border-radius: 6px;
+}
+.radius8{
+   border-radius: 8px;
+}
+.radiusfull{
+   border-radius: 100%;
+}
+
+/* transitions timings */
+.anim100{
+   transition: all 0.1s;
+}
+.anim200{
+   transition: all 0.2s;
+}
+.anim300{
+   transition: all 0.3s;
+}
+
+
+/* cores */
+.elblack{
+   background-color: black;
+}
+
+.elwhite{
+   background-color: white;
+}
+.el50{
+   background-color: var(--elevation_50);
+}
+.el100{
+   background-color: var(--elevation_100);
+}
+.el200{
+   background-color: var(--elevation_200);
+}
+.el250{
+   background-color: var(--elevation_250);
+}
+.el300{
+   background-color: var(--elevation_300);
+}
+.el400{
+   background-color: var(--elevation_400);
+}
+.el500{
+   background-color: var(--elevation_500);
+}
+
+.acc100{
+   background-color: var(--acc100);
+}
+.acc200{
+   background-color: var(--acc200);
+}
+.acc300{
+   background-color: var(--acc300);
+}
+
+.f-hightlight100{
+   background-color: var(--hightlight100);
+}
+
+
+.f100{
+   color: var(--fcor_100);
+}
+.f200{
+   color: var(--fcor_200);
+}
+.f300{
+   color: var(--fcor_300);
+}
+.fwhite{
+   color: var(--fcor_white);
+}
+.fblack{
+   color: var(--fcor_black);
+}
+
+/* hover colors */
+.h-el100:hover{
+   background-color: var(--elevation_100);
+}
+.h-el200:hover{
+   background-color: var(--elevation_200);
+}
+.h-el300:hover{
+   background-color: var(--elevation_300);
+}
+.h-el400:hover{
+   background-color: var(--elevation_400);
+}
+.h-el500:hover{
+   background-color: var(--elevation_500);
+}
+.h-f100:hover{
+   color: var(--fcor_100);
+}
+.h-f200:hover{
+   color: var(--fcor_200);
+}
+.h-f300:hover{
+   color: var(--fcor_300);
+}
+.h-fwhite:hover{
+   color: var(--fcor_white);
+}
+.h-fblack:hover{
+   color: var(--fcor_black);
+}
+
+.h-hightlight100:hover{
+   background-color: var(--hightlight100);
+}
+.h-hightlight200:hover{
+   background-color: var(--hightlight200);
+}
+.h-hightlight300:hover{
+   background-color: var(--hightlight300);
+}
+.h-acc100:hover{
+   background-color: var(--acc100);
+}
+.h-acc200:hover{
+   background-color: var(--acc200);
+}
+.h-acc300:hover{
+   background-color: var(--acc300);
+}
+
+.h-b0:hover{
+   border: none;
+}
+.h-b100:hover{
+   border: 1px solid var(--elevation_100);
+}
+.h-b200:hover{
+   border: 1px solid var(--elevation_200);
+}
+.h-b300:hover{
+   border: 1px solid var(--elevation_300);
+}
+.h-b-acc100:hover{
+   border: 1px solid var(--acc100);
+}
+.b-Bot100{
+   border-bottom: 1px solid var(--elevation_100);
+}
+.b-Bot200{
+   border-bottom: 1px solid var(--elevation_200);
+}
+.b-Bot300{
+   border-bottom: 1px solid var(--elevation_300);
+}
+.b-top300{
+   border-top: 1px solid var(--elevation_300);
+}
+
+
+/*position */
+.fixed{
+   position:fixed;
+}
+.fixedFull{
+   position:fixed;
+   top:0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   
+}
+
+.absolute{
+   position:absolute;
+}
+.relative{
+   position:relative;
+}
+
+
+
+/* layout */
+.displaynone{
+   display:none;
+}
+.flexRow{
+   display: flex;
+   flex-direction: row;
+   
+}
+.flexCol{
+   display: flex;
+   flex-direction: column;
+}
+.grid{
+   display: grid;
+}
+
+.flexCol.horcenter{
+   align-items: center;
+}
+.flexCol.vertcenter{
+   justify-content: center;
+}
+
+.flexRow.horcenter{
+   justify-content: center;
+}
+.flexRow.vertcenter{
+   align-items: center;
+}
+.flexRow.horend{
+   justify-content: flex-end;
+}
+.flexRow.horstart{
+   justify-content: flex-start;
+}
+
+/* isso aqui faz uma grid q os items stack em cima um do outro, centrados no meio */
+.stackingContext{
+   display: grid;
+   place-items: center;
+   isolation: isolate;
+}
+.stackingContext > *{
+   grid-column: 1 / -1;
+   grid-row: 1 / -1;
+}
+
+
+
+/* helpers */
+.cursor{
+   cursor: pointer;
+}
+.cursormove{
+   cursor: move;
+}
+
+.overflowhidden{
+   overflow: hidden;
+}
+.nomouse{/*nomouseevents ? */
+   pointer-events: none;/* nao registra o mouse */
+}
+
+.noselect{/*nao deixa selecionar o texto*/
+   user-select: none;
+}
+.onfocus-outline0:focus{/*quando focus nao fica outlined */
+   outline: none;
+   
+}
+
+
+
+
+/* parte de svg, ainda nao sei como fazer direito*/
+.fill100{
+   fill: var(--fcor_100);
+}
+.fill200{
+   fill: var(--fcor_200);
+}
+.fill300{
+   fill: var(--fcor_300);
+}
+.fillwhite{
+   fill: white
+}
+
+
+.childfill100 path{
+   fill: var(--fcor_100);
+}
+.childfill200 path{
+   fill: var(--fcor_200);
+}
+.childfill300 path{
+   fill: var(--fcor_300);
+}
+.childfillwhite path{
+   fill: white
+}
+.h-childfill100:hover path{
+   fill: var(--fcor_100);
+}
+.h-childfill200:hover path{
+   fill: var(--fcor_200);
+}
+.h-childfill300:hover path{
+   fill: var(--fcor_300);
+}
+.h-childfillwhite:hover path{
+   fill: white
+}
+
+
+.childStroke100 svg{
+   stroke: var(--fcor_100);
+}
+.childStroke100 path{
+   stroke: var(--fcor_100);
+}
+.childStroke200 path{
+   stroke: var(--fcor_100);
+}
+.childStroke300 path{
+   stroke: var(--fcor_100);
+}
+.childStrokewhite path{
+   stroke: white
+}
+.childStrokeblack path{
+   stroke: black;
+}
+
+.h-childStroke100:hover path{
+   stroke: var(--fcor_100);
+}
+.h-childStroke200:hover path{
+   stroke: var(--fcor_200);
+}
+.h-childStroke300:hover path{
+   stroke: var(--fcor_300);
+}
+.h-childStrokewhite:hover path{
+   stroke: white
+}
+.h-childStrokewhite:hover svg{
+   stroke: white
+}
+
+
+
+
+
+
+
+
+
