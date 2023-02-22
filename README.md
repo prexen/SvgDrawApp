@@ -7,7 +7,7 @@ TLDR: Choose your viewbox size on the top left of the interface, select one of t
 Diferent snap settings, control over viewbox size, stroke width, fill and more. You can layer diferent paths to create multi color svgs.
 Below the drawing area you can preview your svg in diferent resolutions.
 
-The svgs can be saved on localstorage and you can use an image as background to draw your svg over it. Theres some shortcuts and a redo system (ctrl-z) in place in case you missclicked some tool or deleted a node. While the move tool or no tool is selected you can press <i>"del"</i> while hovering over an element node to delete it.
+The svgs can be saved on localstorage and you can use an image as background to draw your svg over it. Theres some shortcuts and a undo system (ctrl-z) in place in case you missclicked some tool or deleted a node. While the move tool or no tool is selected you can press <i>"del"</i> while hovering over an element node to delete it.
 When moving a node, if you use <i>"shift"</i> you move the entire object the node is part of.
 
 
